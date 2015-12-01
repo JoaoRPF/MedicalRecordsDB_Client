@@ -11,4 +11,14 @@ private static final long serialVersionUID = 1L;
 		System.out.println("-----");
 	}
 	
+	@Override
+	public String getMessage(){
+		String erro = new String();
+		erro += "-----\n";
+		erro += "ERROR: Missing arguments for Subject\n";
+		erro += "Usage: patient+recordID\n";
+		erro += "-----";
+		return erro;
+	}
+	
 }

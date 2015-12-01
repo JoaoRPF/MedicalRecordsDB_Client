@@ -11,4 +11,15 @@ public class missingResourceSpecArgumentsException extends Exception {
 		System.out.println("-----");
 	}
 	
+	@Override
+	public String getMessage(){
+		String erro = new String();
+		erro += "-----\n";
+		erro += "ERROR: Missing arguments for Resource\n";
+		erro += "Usage: record+specialty\n";
+		erro += "-----";
+		return erro;
+	}
+	
+	
 }

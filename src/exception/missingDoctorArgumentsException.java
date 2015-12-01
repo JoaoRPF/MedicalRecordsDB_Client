@@ -10,5 +10,15 @@ public class missingDoctorArgumentsException extends Exception {
 		System.out.println("Usage: doctor+mode+specialty");
 		System.out.println("-----");
 	}
+	
+	@Override
+	public String getMessage(){
+		String erro = new String();
+		erro += "-----\n";
+		erro += "ERROR: Missing arguments for Subject\n";
+		erro += "Usage: doctor+mode+specialty\n";
+		erro += "-----";
+		return erro;
+	}
 
 }
